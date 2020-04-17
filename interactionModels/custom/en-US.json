@@ -1,0 +1,331 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "abc retail survey",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "finish survey"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "StartSurvey",
+          "slots": [
+            {
+              "name": "survey_name",
+              "type": "surveyName"
+            }
+          ],
+          "samples": [
+            "start survey",
+            "I want to answer the survey {survey_name}",
+            "answer survey {survey_name}"
+          ]
+        },
+        {
+          "name": "AnswerOptionQuestion",
+          "slots": [
+            {
+              "name": "optionId",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "option number {optionId}",
+                "My option is {optionId}",
+                "Here it is {optionId}",
+                "I told you it is {optionId}",
+                "It is {optionId}",
+                "I said {optionId}",
+                "{optionId}"
+              ]
+            }
+          ],
+          "samples": [
+            "option {optionId}",
+            "option number {optionId}",
+            "I feel {optionId}",
+            "I will go with {optionId}",
+            "I think {optionId}",
+            "My answer is {optionId}",
+            "I will choose {optionId}",
+            "I am going to choose option {optionId}",
+            "I will choose option {optionId}",
+            "{optionId}",
+            "I choose {optionId}",
+            "My option is {optionId}"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerTEQuestion",
+          "slots": [
+            {
+              "name": "reply",
+              "type": "replies"
+            },
+            {
+              "name": "answer",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "This title {answer}",
+            "The title {answer}",
+            "It {answer}",
+            "I {answer}",
+            "I would say {reply}",
+            "I think {reply}",
+            "Because {reply}",
+            "{reply}"
+          ]
+        },
+        {
+          "name": "AnswerYesNoQuestion",
+          "slots": [
+            {
+              "name": "yesno",
+              "type": "yesno"
+            }
+          ],
+          "samples": [
+            "I will go with {yesno}",
+            "I think {yesno}",
+            "I would say {yesno}",
+            "I would pick {yesno}",
+            "{yesno}",
+            "My answer is {yesno}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "amazon studios feedback"
+              }
+            },
+            {
+              "name": {
+                "value": "Feedback for event",
+                "synonyms": [
+                  "feedback",
+                  "feedback for event"
+                ]
+              }
+            }
+          ],
+          "name": "surveyName"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "It is highly enjoyable. Riveting edge of your seat stuff. Performances are top class."
+              }
+            },
+            {
+              "name": {
+                "value": "i dont know how to handle this slot yet"
+              }
+            },
+            {
+              "name": {
+                "value": "this could be just anything i guess"
+              }
+            },
+            {
+              "name": {
+                "value": "i dont know what to say"
+              }
+            },
+            {
+              "name": {
+                "value": "nj8u8 jkjkjk7 kjjjjui8 kj879"
+              }
+            },
+            {
+              "name": {
+                "value": "mnbnbnmbuiio67"
+              }
+            },
+            {
+              "name": {
+                "value": "uiiii"
+              }
+            },
+            {
+              "name": {
+                "value": "jhjbnyu"
+              }
+            },
+            {
+              "name": {
+                "value": "nmnnmmm"
+              }
+            },
+            {
+              "name": {
+                "value": "because it is beuatiful"
+              }
+            },
+            {
+              "name": {
+                "value": "it is awful"
+              }
+            },
+            {
+              "name": {
+                "value": "it is great"
+              }
+            },
+            {
+              "name": {
+                "value": "whatever"
+              }
+            },
+            {
+              "name": {
+                "value": "i dont know"
+              }
+            },
+            {
+              "name": {
+                "value": "just like that"
+              }
+            },
+            {
+              "name": {
+                "value": "other"
+              }
+            },
+            {
+              "name": {
+                "value": "green"
+              }
+            },
+            {
+              "name": {
+                "value": "Blue"
+              }
+            },
+            {
+              "name": {
+                "value": "Red"
+              }
+            }
+          ],
+          "name": "replies"
+        },
+        {
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "maybe"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "yes",
+                "synonyms": [
+                  "yay!",
+                  "yep",
+                  "yay",
+                  "ya",
+                  "yes",
+                  "yeah"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "no",
+                "synonyms": [
+                  "na",
+                  "nai",
+                  "nah",
+                  "nope",
+                  "no"
+                ]
+              }
+            }
+          ],
+          "name": "yesno"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "AnswerOptionQuestion",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "optionId",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.574685077470.114564823360"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Confirm.Intent.574685077470",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Can you tell me the option number?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.574685077470.114564823360",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Can you tell me the option number?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}
